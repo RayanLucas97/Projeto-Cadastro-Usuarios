@@ -27,10 +27,16 @@ function Home() {
     const data = await api.post("/usuarios", {
       name: inputName.current.value,
       age: parseInt(inputAge.current.value),
-      email: inputEmail.current.value,
+      email: inputEmail.current.value
     })
 
+    navigate("/lista-de-usuarios")
+
+
+
   }
+
+  
 
   return (
     <Container>
@@ -65,7 +71,7 @@ function Home() {
           <Input type="email" placeholder=" E-mail do usuário" ref={inputEmail} />
         </div>
 
-        <Button type="button" onClick={registerNewUser} theme="primary"> Cadastrar Usuário</Button>
+        <Button type="button" onClick={registerNewUser} theme="primary">Cadastrar Usuário</Button>
       </Form>
 
       <Button type="button" onClick={() => navigate("/lista-de-usuarios")}> Ver Lista de Usuários </Button>

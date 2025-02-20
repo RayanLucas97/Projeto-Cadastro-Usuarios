@@ -19,6 +19,7 @@ color: #fff;
  font-size: 38px;
  font-style: normal;
  font-weight: 600px;
+ margin-top: 30px;
 
 `
 
@@ -46,6 +47,22 @@ justify-content: space-between;
 align-items: center;
 gap: 20px;
 max-width: 400px;
+
+h3{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+
+
+}
+
+p{
+    color:#fff;
+    font-size: 14px;
+    font-weight: 200;
+}
+
 
 `
 
